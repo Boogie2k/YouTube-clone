@@ -1,6 +1,6 @@
 # YouTube-clone
 
-I created a YouTube clone using ReactJs, however the clone has not been completed yet it is still being developed
+I created a YouTube clone using reactJs, however the clone has not been completed yet it is still being developed
 
 
 # Getting Started with Create React App
