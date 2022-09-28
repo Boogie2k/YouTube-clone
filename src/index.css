@@ -1,4 +1,10 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +16,880 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+ */
+
+.youtube-clone-navbar {
+  position: fixed;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.youtube-clone-navbar .menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.youtube-clone-navbar .menu svg {
+  width: 24px;
+  height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.youtube-clone-navbar .logo {
+  display: flex;
+  font-size: 0.625rem;
+  flex-direction: row;
+
+  width: 10.5625em;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 4.75em;
+}
+
+.youtube-clone-navbar .to-search {
+  display: flex;
+  margin-right: 5px;
+
+}
+
+.youtube-clone-navbar .search {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 2.5em;
+  width: 45.5em;
+}
+
+/* .youtube-clone-navbar .to-search {
+  border: 1px solid green;
+} */
+
+.youtube-clone-navbar form {
+  width: 35.75em;
+
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.youtube-clone-navbar .search .search-button {
+  width: 4.0625em;
+  border: 0;
+  border: 1px solid #cccccc;
+}
+
+.youtube-clone-navbar .search-bar {
+  width: 32.8125em;
+  text-align: center;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-clone-navbar .search-input {
+
+  width: 29.375em;
+  min-height: 1.625em;
+  border: 0;
+  font-size: 1rem;
+
+}
+
+/* .youtube-clone-navbar .search .mic-div {} */
+
+.youtube-clone-navbar .search .mic {
+  width: 2.5em;
+  height: 2.5em;
+  align-items: center;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.youtube-clone-navbar .profile-bar {
+  width: 15.625em;
+  display: flex;
+  margin-right: 1.7em;
+
+  justify-content: flex-end
+}
+
+.youtube-clone-navbar .profile-bar>div {
+  width: 9.75em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.youtube-clone-navbar .profile-bar .add-video {
+  width: 2.5em;
+}
+
+.youtube-clone-navbar .profile-bar .notification {
+  width: 2.5em;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.youtube-clone-navbar .profile-bar .pfp {
+  width: 3.75em;
+  background-color: #fff;
+  border: 0;
+}
+
+.youtube-clone-navbar .profile-bar .pfp img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:682px) {
+
+  .youtube-clone-navbar form {
+    display: none;
+  }
+
+  .youtube-clone-navbar .search-button {
+    background: none;
+    border: none;
+  }
+
+}
+
+/*youtube-clone-sidebar*/
+
+.youtube-clone-sidebar {
+  max-width: 15%;
+  margin-top: 1%;
+
+  z-index: -1;
+  position: absolute;
+
+  top: 60px;
+}
+
+.youtube-clone-sidebar .section-two {
+  margin: 12px 0;
+  padding: 12px 0;
+  border-top: 1px solid #0000001a;
+  color: #808080;
+  text-align: center;
+
+
+}
+
+.youtube-clone-sidebar svg {
+  width: 24px;
+  height: 24px;
+
+}
+
+
+
+.youtube-clone-sidebar ul li {
+  min-height: 40px;
+  /*   width: 192px; */
+  display: block;
+  align-items: center;
+
+
+}
+
+.youtube-clone-sidebar ul li a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px 24px 0px 24px;
+
+
+}
+
+@media screen and (min-width:1072px) {
+  .youtube-clone-sidebar ul li a svg {
+    margin-right: 19%;
+  }
+}
+
+.youtube-clone-sidebar ul li a article {
+  text-align: left;
+  text-transform: capitalize;
+
+  /*  margin-left: 20px; */
+}
+
+.youtube-clone-sidebar .sidebar-summary {
+  color: #808080;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-right: 9%;
+}
+
+/* Youtube-clone-topics*/
+
+.youtube-clone-container {
+  min-width: 85%;
+  margin-left: 15%;
+  position: absolute;
+  z-index: -1;
+  background: #f9f9f9;
+  top: 56px;
+  right: 0;
+
+}
+
+.youtube-clone-topics {
+  border-top: 1px solid #0000001a;
+  border-bottom: 1px solid #0000001a;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 116px;
+
+
+}
+
+.youtube-clone-topics ul {
+  display: flex;
+  justify-content: space-evenly;
+
+
+
+}
+
+.youtube-clone-topics ul li {
+  list-style-type: none;
+  margin: 10px 0;
+  border-radius: 49px;
+  width: 76px;
+  min-height: 40px;
+  background-color: #0000001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*youtube-clone-homeContent*/
+
+
+.youtube-content-videoFrame {
+  width: 22.25%;
+  margin: 1.5%;
+
+
+}
+
+.exp {
+  margin-top: 5.8%;
+}
+
+
+
+.youtube-content-videoFrame .main-img {
+  width: 100%;
+
+}
+
+.youtube-content-videoFrame article {
+  display: flex;
+
+  padding: 10px 0 0 0;
+
+}
+
+.youtube-content-videoFrame .logo-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  /*   padding-right: 10px; */
+
+}
+
+.youtube-content-videoFrame article div {
+  display: flex;
+  flex-direction: column;
+
+
+
+
+}
+
+.youtube-content-videoFrame article div span {
+
+
+  height: 14px;
+}
+
+.youtube-content-videoFrame article div p {
+  color: #606060;
+  margin-top: 10px;
+}
+
+.youtube-content-video-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.youtube-content-video-row-two {
+  display: flex;
+}
+
+.youtube-content-video-row-three {
+  display: flex;
+
+}
+
+.youtube-content-video-row-four {
+  display: flex;
+
+}
+
+.youtube-content-video-row-five {
+  display: flex;
+
+}
+
+@media screen and (max-width:896px) {
+  .youtube-content-video-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+  }
+
+  .youtube-content-video-row-two {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-video-row-three {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-video-row-four {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-video-row-five {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-videoFrame {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+}
+
+
+@media screen and (max-width:780px) {
+
+  .youtube-clone-sidebar {
+    /*  display: none;  */
+    position: fixed;
+
+    display: flex;
+    left: 1%;
+    width: 290px;
+
+  }
+
+  /* .youtube-clone-sidebar ul {
+    
+  } */
+
+  /*  .youtube-clone-sidebar ul li {
+    border: 1px solid yellow;
+  } */
+
+  .youtube-clone-container {
+    width: 100%;
+    justify-content: center;
+
+
+  }
+
+  .youtube-content-video-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+  }
+
+  .youtube-content-video-row-two {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-video-row-three {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-video-row-four {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-video-row-five {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  .youtube-content-videoFrame {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+}
+
+@media screen and (max-width:500px) {
+  .youtube-content-container {
+    flex-direction: row;
+  }
+
+  .youtube-content-video-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    justify-content: center;
+
+  }
+
+  .youtube-content-videoFrame {
+    width: 70%;
+    margin: 1.5% auto;
+  }
+
+  .youtube-content-video-row-two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtube-content-video-row-three {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtube-content-video-row-four {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .youtube-content-video-row-five {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  /*   .youtube-clone-sidebar {
+    display: none;
+  } */
+
+  .youtube-clone-container {
+    width: 100%;
+  }
+
+}
+
+.null {
+  text-align: center;
+  width: 100vw;
+
+  min-height: 100vh;
+  position: fixed;
+  background: #f9f9f9;
+}
+
+.null .content {
+  margin: 0 auto;
+
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.null .content h1,
+img,
+p {
+  margin-right: 15%;
+}
+
+.null img {
+  width: 30vw;
+  height: 30vh;
+  margin-top: 5vh;
+}
+
+/* gaming */
+.youtube-clone-gaming-poster {
+  margin-top: 5.8%;
+  background-image: url('../src/website/photos/gaming/bgImage.jpg');
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  /*  opacity: 0.3; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/website/photos/gaming/bgImage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.youtube-clone-gaming-poster h1 {
+  font-size: 3.625rem;
+  font-weight: 500;
+  color: #fff;
+  /*  margin-top: 2em; */
+}
+
+.youtube-clone-gaming-poster {
+
+  text-decoration: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.youtube-clone-gaming-poster p {
+  font-size: 1rem;
+}
+
+.gaming-suscribe {
+
+  display: flex;
+  margin-left: 2%;
+  justify-content: space-between;
+  width: 13em;
+}
+
+.gaming-suscribe article {
+  display: flex;
+  width: 6.5rem;
+  text-align: left;
+  justify-content: center;
+
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.gaming-suscribe article h1 {
+  font-size: 1.5rem;
+}
+
+.gaming-suscribe article p {
+  font-size: 0.875rem;
+  margin-left: 1px;
+}
+
+.gaming-suscribe img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  margin-right: 0;
+}
+
+.gaming-suscribe-sec {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0;
+
+  justify-content: space-between;
+
+
+}
+
+.gaming-suscribe-sec button {
+  background-color: #cc0000;
+  color: white;
+  max-height: 2.3em;
+  width: 6.87em;
+  border: 0;
+  margin-right: 2%;
+  margin-top: 1.7em;
+}
+
+.youtube-clone-top-games {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.youtube-clone-top-games article {
+  margin: 2% 0 0;
+  margin-left: 2.5%;
+  min-height: 3.125em;
+  width: 10.053em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.youtube-clone-top-games article h2 {
+  font-size: 1rem;
+}
+
+.youtube-clone-top-games article p {
+  font-size: 0.875rem;
+  width: 10.75rem;
+
+}
+
+.youtube-clone-top-games a {
+  color: #085fd4;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 2.5%;
+  margin-right: 4%;
+  text-decoration: none;
+
+}
+
+.topgames-row {
+  /* display: flex;
+  flex-direction: row;*/
+
+  /*   width: 85%; */
+  background: #f1f1f1;
+  display: flex;
+
+
+  /*  padding: 2% auto; */
+  justify-content: center;
+
+}
+
+.topgames-frame {
+  width: 19%;
+  margin-right: 0;
+
+}
+
+.topgames-frame img {
+  width: 13.125em;
+}
+
+.topgames-frame h1 {
+  font-size: 0.875rem;
+  padding: 8px 0;
+}
+
+.topgames-frame p {
+  font-size: 0.75rem;
+}
+
+
+@media screen and (max-width:1343px) {
+  .topgames-row {
+    /* display: flex;
+    flex-direction: row;*/
+
+    /*   width: 85%; */
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+
+    /*  padding: 2% auto; */
+    justify-content: center;
+    padding-left: 5%;
+
+  }
+}
+
+
+@media screen and (max-width:1164px) {
+  .topgames-row {
+    /* display: flex;
+    flex-direction: row;*/
+
+    /*   width: 85%; */
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+
+    /*  padding: 2% auto; */
+    justify-content: center;
+    padding-left: 5%;
+
+  }
+}
+
+@media screen and (max-width:881px) {
+  .topgames-row {
+    /* display: flex;
+    flex-direction: row;*/
+
+    /*   width: 85%; */
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+    /*  padding: 2% auto; */
+    justify-content: center;
+    padding-left: 5%;
+
+  }
+}
+
+/* sports */
+
+.topsports-row {
+  /* display: flex;
+  flex-direction: row;*/
+
+  /*   width: 85%; */
+  background: #f1f1f1;
+  display: flex;
+
+
+  /*  padding: 2% auto; */
+  justify-content: center;
+
+}
+
+.topsports-frame {
+  width: 24%;
+  margin-right: 0;
+
+}
+
+.topsports-frame img {
+  width: 13.125em;
+}
+
+.topsports-frame h1 {
+  font-size: 0.875rem;
+  padding: 8px 0;
+}
+
+.topsports-frame p {
+  font-size: 0.75rem;
+}
+
+.youtube-clone-sports-poster {
+  margin-top: 5.8%;
+  background-image: url('../src/website/photos/gaming/bgImage.jpg');
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  /*  opacity: 0.3; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/website/photos/sports/mqdefault_6s.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.youtube-clone-sports-poster h1 {
+  font-size: 3.625rem;
+  font-weight: 500;
+  color: #fff;
+  /*  margin-top: 2em; */
+}
+
+.youtube-clone-sports-poster {
+
+  text-decoration: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.youtube-clone-sports-poster p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width:1343px) {
+  .topsports-row {
+    /* display: flex;
+    flex-direction: row;*/
+
+    /*   width: 85%; */
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+
+    /*  padding: 2% auto; */
+    justify-content: center;
+    padding-left: 5%;
+
+  }
+}
+
+
+@media screen and (max-width:1164px) {
+  .topsports-row {
+    /* display: flex;
+    flex-direction: row;*/
+
+    /*   width: 85%; */
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+
+    /*  padding: 2% auto; */
+    justify-content: center;
+    padding-left: 5%;
+
+  }
+}
+
+@media screen and (max-width:881px) {
+  .topsports-row {
+    /* display: flex;
+    flex-direction: row;*/
+
+    /*   width: 85%; */
+    background: #f1f1f1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+    /*  padding: 2% auto; */
+    justify-content: center;
+    padding-left: 5%;
+
+  }
 }
